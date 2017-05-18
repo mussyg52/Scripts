@@ -83,10 +83,3 @@ file.write("$daysleft = " + str(daysleft) + '\n' )
 file.write("$monthdays = " + str(monthdays) + '\n' )
 
 file.close()
-
-bob = 10
-
-if bob < 11:
-    print bob
-else
-    print "bob doesnt have enough money"
