@@ -83,3 +83,16 @@ file.write("$daysleft = " + str(daysleft) + '\n' )
 file.write("$monthdays = " + str(monthdays) + '\n' )
 
 file.close()
+
+#Generate list of recent transactions
+
+transactions = otc.get_transactions()
+
+if transactions:
+    for transaction in transactions:
+        print "{0} {1:7.2f} {2}".format(transaction.get("TransactionDate"),
+                                        transaction.get("TransactionAmount"),
+                                        transaction.get("Description"))
+else:
+    print "Request failed. Aborting"
+    exit()

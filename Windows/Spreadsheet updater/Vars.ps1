@@ -1,3 +1,3 @@
-$balance = 226.8
-$daysleft = 8
+$balance = 168.95
+$daysleft = 7
 $monthdays = 31
