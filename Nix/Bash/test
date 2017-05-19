@@ -1,0 +1,59 @@
+---
+stingray:
+  :service: sas
+
+tig:
+  -
+    :ip: <%= $SAS_TIG %>
+    :description: "Load balancer config for the sas service"
+
+pool:
+  -
+	:name: sas-80
+	poolnodes: \<%= $SAS_POOL_MEMBERS_80 %>
+	:name: sas-443
+	poolnodes: \<%= $SAS_POOL_MEMBERS_443 %>
+	:name: sas-7541
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7541 %>
+	:name: sas-8581
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8581 %>
+	:name: sas-8801
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8801 %>
+	:name: sas-8811
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8811 %>
+	:name: sas-8821
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8821 %>
+	:name: sas-8831
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8831 %>
+	:name: sas-8591
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8591 %>
+	:name: sas-8701
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8701 %>
+	:name: sas-8601
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8601 %>
+	:name: sas-8611
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8611 %>
+	:name: sas-8621
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8621 %>
+	:name: sas-8631
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8631 %>
+	:name: sas-8561
+	poolnodes: \<%= $SAS_POOL_MEMBERS_8561 %>
+	:name: sas-7080
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7080 %>
+	:name: sas-7442
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7442 %>
+	:name: sas-7443
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7443 %>
+	:name: sas-7444
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7444 %>
+	:name: sas-7445
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7445 %>
+	:name: sas-7447
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7447 %>
+	:name: sas-7448
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7448 %>
+	:name: sas-7449
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7449 %>
+	:name: sas-7450
+	poolnodes: \<%= $SAS_POOL_MEMBERS_7450 %>
