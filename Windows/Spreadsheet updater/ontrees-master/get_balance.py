@@ -12,7 +12,7 @@ from datetime import timedelta
 
 import ontrees
 
-otc = ontrees.Client(email="lovatt_adam@hotmail.com", password="musstard52")
+otc = ontrees.Client(email="lovatt_adam@hotmail.com", password="redacted")
 
 print "Attempting to log in"
 if otc.login():
